@@ -11,7 +11,7 @@ def flatten_and_sort(array):
     # Циклом добавляем каждый элемент массива в итоговый список
     for i in array:
         for j in i:
-            result_list.append(j)
+            result_list.append(j)  #TODO тут можно обойтись без цикла в цикле
     return sorted(result_list)
     
     
