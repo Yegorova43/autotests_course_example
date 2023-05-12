@@ -46,8 +46,9 @@ def multiplication_chain(num):
             len_sum = len(str(a))    
             # увеличиваем счетчик итераций на 1
             count_multy += 1
-        return count_multy    
-            
+        return count_multy
+    
+#TODO очень громоздское решение, поидее все можно обернуть в 1 цикл, без действий перед ним            
             
 data = [
     39, 4, 25, 999, 5050, 222333444
