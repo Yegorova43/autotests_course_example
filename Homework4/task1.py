@@ -5,10 +5,10 @@ def which_triangle(a, b, c):
         if a == b and b == c:
             type_triangle = "Равносторонний"
             # 2 любые стороны треугольника равны между собой, при этом третья не равна первым двум
-        elif (a == b and a != c) or (a == c and a != b) or (b == c and b != a):
+        elif (a == b != c) or (a == c != b) or (b == c != a):
             type_triangle = "Равнобедренный"
             # Все стороны треугольника не равны друг другу
-        elif a != b and a != c and b != a and b != c:
+        elif a != b != c and b != a != c:
             type_triangle = "Обычный"
     else:
         # По заданным сторонам невозможно построить треугольник
