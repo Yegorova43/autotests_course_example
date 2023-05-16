@@ -5,17 +5,17 @@ def which_triangle(a, b, c):
         if a == b and b == c:
             type_triangle = "Равносторонний"
             # 2 любые стороны треугольника равны между собой, при этом третья не равна первым двум
-        elif (a == b != c) or (a == c != b) or (b == c != a):
+        elif a == b or a == c or b == c:
             type_triangle = "Равнобедренный"
             # Все стороны треугольника не равны друг другу
-        elif a != b != c and b != a != c:
+        elif a != b != c:
             type_triangle = "Обычный"
     else:
         # По заданным сторонам невозможно построить треугольник
         type_triangle = "Не треугольник"
 
     return type_triangle
-    
+
 
 data = [
     (3, 3, 3),
@@ -28,7 +28,6 @@ data = [
 test_data = [
     "Равносторонний", "Равнобедренный", "Обычный", "Равнобедренный", "Не треугольник"
 ]
-
 
 for i, d in enumerate(data):
     assert which_triangle(*d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'

@@ -1,6 +1,5 @@
 import math
 
-
 def multiplication_chain(num):
     count_multy = 0
 
