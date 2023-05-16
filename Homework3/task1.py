@@ -1,15 +1,5 @@
 def modification(lst):
-    # сохраняем первый и последний элемент в переменные
-    first_item = lst[0]
-    last_item = lst[-1]
-    # удаляем первый элемент списка
-    lst.remove(first_item)
-    # вставляем последний элемент списка на первую позицию
-    lst.insert(0, last_item)
-    # удаляем последний элемент списка
-    lst.pop(- 1)
-    # вставляем первый элемент списка на последнюю позицию
-    lst.append(first_item)
+    lst[0], lst[-1] = lst[-1], lst[0]
     return lst
 
 
