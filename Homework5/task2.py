@@ -17,7 +17,7 @@ def repeats(our_str):
             count = 1 + str_list.count(let)
             new_str += str(let) + '_' + str(count)
             str_list.append(let)
-
+# TODO Можно спокойно избавиться от if/else если поменять местами пару строк
     return new_str
 
 
