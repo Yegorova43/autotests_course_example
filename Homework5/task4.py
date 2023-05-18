@@ -17,6 +17,7 @@ def scrabble(word):
         }
     
     # создаем словарь, где ключ = очки, значение = буква, считаем сумму очков
+    # TODO а сможешь рассказать как он тут создается?)
     points = (sum([key for letter in word for key, value in letters_dict.items() if letter in value]))
     
     return points
